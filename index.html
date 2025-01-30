@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Interactivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-light-color1 dark:bg-dark-color1 text-light-color4 dark:text-dark-color4">
+    <!-- Encabezado del sitio -->
+    <header class="px-4 py-8 sm:px-8 md:px-10 lg:px-20 lg:py-14">
+        <!-- Barra de navegación -->
+        <nav
+            class="text-light-color4 dark:text-dark-color4 mx-auto flex max-w-8xl items-center justify-between lg:justify-center">
+            <!-- Título del sitio -->
+            <div class="flex justify-start gap-4 md:gap-8 align-middle w-64 ml-4 mr-4 lg:ml-0 lg:mr-0">
+                <a class="text-light-color4 dark:text-dark-color4 underlined block whitespace-nowrap text-lg sm:text-xl md:text-2xl font-medium transition focus:outline-none"
+                    href="#">
+                    <h1>Robinson Aristizabal</h1>
+                </a>
+            </div>
+            <!-- Lista de navegación -->
+            <ul class="hidden lg:flex items-center justify-center mx-auto mr-4 ml-4">
+                <li class="group relative px-2 py-1 sm:px-3 sm:py-2 md:px-5 md:py-2">
+                    <a class="underlined block whitespace-nowrap text-sm sm:text-base md:text-lg font-medium hover:text-light-color2 dark:hover:text-dark-color4 focus:text-light-color2 dark:focus:text-dark-color2 focus:outline-none text-light-color3 dark:text-dark-color3"
+                        href="#">Sobre mí</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-light-color2 dark:bg-dark-color4 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="group relative px-2 py-1 sm:px-3 sm:py-2 md:px-5 md:py-2">
+                    <a class="underlined block whitespace-nowrap text-sm sm:text-base md:text-lg font-medium hover:text-light-color2 dark:hover:text-dark-color4 focus:text-light-color2 dark:focus:text-dark-color2 focus:outline-none text-light-color3 dark:text-dark-color3"
+                        href="#">Proyectos</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-light-color2 dark:bg-dark-color4 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="group relative px-2 py-1 sm:px-3 sm:py-2 md:px-5 md:py-2">
+                    <a class="underlined block whitespace-nowrap text-sm sm:text-base md:text-lg font-medium hover:text-light-color2 dark:hover:text-dark-color4 focus:text-light-color2 dark:focus:text-dark-color2 focus:outline-none text-light-color3 dark:text-dark-color3"
+                        href="#">Habilidades</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-light-color2 dark:bg-dark-color4 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="group relative px-2 py-1 sm:px-3 sm:py-2 md:px-5 md:py-2">
+                    <a class="underlined block whitespace-nowrap text-sm sm:text-base md:text-lg font-medium hover:text-light-color2 dark:hover:text-dark-color4 focus:text-light-color2 dark:focus:text-dark-color2 focus:outline-none text-light-color3 dark:text-dark-color3"
+                        href="#">Blog</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-light-color2 dark:bg-dark-color4 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="group relative px-2 py-1 sm:px-3 sm:py-2 md:px-5 md:py-2">
+                    <a class="underlined block whitespace-nowrap text-sm sm:text-base md:text-lg font-medium hover:text-light-color2 dark:hover:text-dark-color4 focus:text-light-color2 dark:focus:text-dark-color2 focus:outline-none text-light-color3 dark:text-dark-color3"
+                        href="#">Cursos</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-light-color2 dark:bg-dark-color4 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="group relative px-2 py-1 sm:px-3 sm:py-2 md:px-5 md:py-2">
+                    <a class="underlined block whitespace-nowrap text-sm sm:text-base md:text-lg font-medium hover:text-light-color2 dark:hover:text-dark-color4 focus:text-light-color2 dark:focus:text-dark-color2 focus:outline-none text-light-color3 dark:text-dark-color3"
+                        href="#">Contacto</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-light-color2 dark:bg-dark-color4 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+                </li>
+            </ul>
+            <!-- Botón del menú móvil -->
+            <div class="block lg:hidden">
+                <button
+                    class="focus:border-light-color2 dark:focus:border-dark-color2 hover:border-light-color2 dark:hover:border-dark-color2 border-light-color3 dark:border-dark-color3 text-light-color4 dark:text-dark-color4 inline-flex h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 items-center justify-center rounded-full border-2 p-1 transition focus:outline-none"
+                    id="mobile-menu-button">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="9" width="20" height="2" rx="1" fill="currentColor"></rect>
+                        <rect x="6" y="15" width="20" height="2" rx="1" fill="currentColor"></rect>
+                        <rect x="6" y="21" width="20" height="2" rx="1" fill="currentColor"></rect>
+                    </svg>
+                </button>
+                <!-- Menú móvil -->
+                <div id="mobile-menu"
+                    class="fixed bottom-0 left-0 right-0 top-[100px] m-0 h-[calc(100svh-128px)] w-full hidden">
+                    <div
+                        class="bg-light-color1 dark:bg-dark-color1 flex h-full flex-col overflow-y-scroll border-t border-light-color3 dark:border-dark-color3 pb-8">
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/">Inicio</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/blog">Blog</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/courses">Cursos</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/discord">Discord</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/chats/05">Chats</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/calls/04">Llamadas</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/workshops">Talleres</a>
+                        <a class="hover:bg-light-color2 dark:hover:bg-dark-color2 focus:bg-light-color2 dark:focus:bg-dark-color2 text-light-color4 dark:text-dark-color4 border-b border-light-color3 dark:border-dark-color3 px-5vw py-6 hover:text-light-color2 dark:hover:text-dark-color2"
+                            href="/about">Acerca de</a>
+                        <!-- Toggle de tema -->
+                        <div class="relative mt-6 mx-auto">
+                            <h2 id="theme-title" class="text-center my-2">Tema: Light</h2>
+                            <input type="checkbox" id="theme-toggle-mobile" class="hidden">
+                            <label for="theme-toggle-mobile" class="flex items-center justify-center cursor-pointer ">
+                                <div class="relative">
+                                    <div
+                                        class="block bg-light-color3 dark:bg-dark-color3 w-12 h-6 sm:w-14 sm:h-7 md:w-16 md:h-9 rounded-full">
+                                    </div>
+                                    <div
+                                        class="dot absolute left-1 top-1 bg-light-color4 dark:bg-dark-color4 w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7 rounded-full transition-transform duration-300 ease-in-out flex items-center justify-center">
+                                        <svg id="sun-icon-mobile"
+                                            class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-light-color1 dark:text-dark-color1"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4.354a7.646 7.646 0 110 15.292 7.646 7.646 0 010-15.292zM12 2v2m0 16v2m8-10h2M2 12H0m15.364-7.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414">
+                                            </path>
+                                        </svg>
+                                        <svg id="moon-icon-mobile"
+                                            class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-light-color1 dark:text-dark-color1 hidden"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Toggle de tema para pantallas grandes -->
+            <div class="hidden lg:flex items-center justify-center w-64 lg:ml-0 lg:mr-0">
+                <div class="relative mr-4 ml-4">
+                    <input type="checkbox" id="theme-toggle" class="hidden">
+                    <label for="theme-toggle" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                            <div
+                                class="block bg-light-color3 dark:bg-dark-color3 w-10 h-5 sm:w-12 sm:h-6 md:w-14 md:h-8 rounded-full">
+                            </div>
+                            <div
+                                class="dot absolute left-1 top-1 bg-light-color4 dark:bg-dark-color4 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 rounded-full transition-transform duration-300 ease-in-out flex items-center justify-center">
+                                <svg id="sun-icon"
+                                    class="w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 text-light-color1 dark:text-dark-color1"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a7.646 7.646 0 110 15.292 7.646 7.646 0 010-15.292zM12 2v2m0 16v2m8-10h2M2 12H0m15.364-7.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414">
+                                    </path>
+                                </svg>
+                                <svg id="moon-icon"
+                                    class="w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 text-light-color1 dark:text-dark-color1 hidden"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="relative mx-10vw">
+            <!-- Contenedor principal -->
+            <div
+                class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl mb-24 h-auto pt-24 lg:min-h-[40rem] lg:pb-12 lg:mb-64">
+                <!-- imagen -->
+                <div
+                    class="col-span-full mb-12 lg:mb-0 flex items-center justify-center lg:col-span-7 lg:col-start-6 lg:-mr-5vw lg:-mt-24 lg:px-0">
+                    <img class="h-auto w-auto object-contain motion-safe:animate-hero-image-reveal max-h-180 max-w-180"
+                        alt="Logo del zorro" src="images/zorro.svg"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1023px) 80vw, (max-width: 1279px) 50vw, (min-width: 1280px) 600px"
+                        crossorigin="anonymous"
+                        style="aspect-ratio: 1 / 1; filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));">
+                </div>
+                <!-- Contenido de texto y enlaces -->
+                <div
+                    class="col-span-full pt-6 lg:col-start-1 lg:row-start-1 lg:flex lg:h-full lg:flex-col lg:col-span-5">
+                    <div class="flex flex-auto flex-col">
+                        <h2
+                            class="leading-tight text-3xl md:text-4xl text-black dark:text-white motion-safe:animate-hero-text-reveal">
+                            Transformando el mundo con software de calidad.
+                        </h2>
+                        <div class="mt-14 flex flex-col space-y-4 motion-safe:animate-hero-text-reveal">
+                            <div class="mr-auto flex flex-col gap-4">
+                                <!-- Enlace al blog -->
+                                <a class="group relative inline-flex text-lg font-medium opacity-100 transition focus:outline-none disabled:opacity-50"
+                                    href="/blog">
+                                    <div
+                                        class="focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50 bg-light-color4 dark:bg-dark-color4">
+                                    </div>
+                                    <div
+                                        class="relative flex h-full w-full items-center justify-center whitespace-nowrap text-light-color1 dark:text-dark-color1 space-x-5 px-11 py-6">
+                                        Leer el blog
+                                    </div>
+                                </a>
+                                <!-- Enlace a los cursos -->
+                                <a class="group relative inline-flex text-lg font-medium opacity-100 transition focus:outline-none disabled:opacity-50"
+                                    href="/courses">
+                                    <div
+                                        class="focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50 border-secondary bg-primary border-2 group-hover:border-transparent group-focus:border-transparent">
+                                    </div>
+                                    <div
+                                        class="relative flex h-full w-full items-center justify-center whitespace-nowrap text-primary space-x-5 px-11 py-6">
+                                        Tomar un curso
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Enlace para aprender más -->
+                    <div class="hidden pt-12 motion-safe:animate-hero-text-reveal lg:block">
+                        <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none text-lg"
+                            href="/#intro">
+                            <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div class="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                            cy="30"></circle>
+                                        <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                            fill="transparent" r="28" cx="30" cy="30"
+                                            style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                            stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;">
+                                    <svg class="transform rotate-0" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <span class="ml-8 text-xl font-medium">Aprende más sobre Mi</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="relative mx-10vw">
+                <!-- Contenedor principal -->
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <!-- Video incrustado -->
+                    <div class="col-span-full lg:col-span-4">
+                        <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg object-cover"
+                                src="https://www.youtube.com/embed/Mp1d1CIdPRs"
+                                title="Tremolo Tech House - Martin Robins (Official music)" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-secondary text-xl">Video de introducción (2:13)</p>
+                        <a class="underlined" href="https://www.youtube.com/watch?v=Mp1d1CIdPRs&ab_channel=MARTINROBINS"
+                            target="_blank" rel="noopener noreferrer">Mira el video completo aquí</a>
+                    </div>
+                    <!-- Contenido de texto -->
+                    <div class="col-span-full mt-12 lg:col-span-6 lg:col-start-6 lg:mt-0">
+                        <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">Hola, soy Robinson
+                            Aristizabal. Soy desarrollador, músico y creativo.</h2>
+                        <p class="text-2xl font-medium md:text-3xl text-gray-600 dark:text-slate-500 mt-12">
+                            Me apasiona la tecnología y el arte. Cuando no estoy trabajando en proyectos de software,
+                            disfruto creando música y explorando nuevas formas de expresión artística.
+                        </p>
+                        <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none mt-20"
+                            href="/about">
+                            <span class="mr-8 text-xl font-medium">Aprende más sobre mí</span>
+                            <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div class="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                            cy="30"></circle>
+                                        <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                            fill="transparent" r="28" cx="30" cy="30"
+                                            style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                            stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;">
+                                    <svg class="transform -rotate-90" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-56 lg:h-64"></div>
+            <div class="relative mx-10vw py-10 md:py-24 lg:pb-40 lg:pt-36">
+                <div class="absolute inset-0 -mx-5vw">
+                    <div class="bg-secondary mx-auto h-full w-full max-w-8xl rounded-lg"></div>
+                </div>
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <div class="col-span-full lg:col-span-5">
+                        <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white mb-4 lg:mb-0">
+                            ¿Te apasiona la música y la creatividad?
+                        </h2>
+                    </div>
+                    <div class="col-span-full lg:col-span-5 lg:col-start-7">
+                        <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500">
+                            Estás en el lugar correcto. Mi sitio web es tu espacio para explorar y disfrutar de la
+                            música y la creatividad.
+                        </p>
+                    </div>
+                    <hr class="col-span-full mb-10 mt-16 border-gray-200 dark:border-gray-600 lg:mb-20 lg:mt-24">
+                    <div class="order-1 col-span-full col-start-1 lg:order-3 lg:col-span-5 lg:mt-52 lg:pt-2">
+                        <!-- Lista de pestañas -->
+                        <div role="tablist" aria-orientation="horizontal"
+                            class="inline-flex flex-row space-x-8 bg-transparent text-xl leading-snug text-white lg:flex-col lg:space-x-0 lg:text-7xl">
+                            <button aria-controls="tabs--panel--0" aria-selected="true" role="tab" tabindex="0"
+                                class="hover:text-primary inline-flex w-full items-center border-none p-0 transition focus:bg-transparent text-gray-600 dark:text-slate-500">
+                                <span>Blog</span>
+                            </button>
+                            <button aria-controls="tabs--panel--1" aria-selected="false" role="tab" tabindex="-1"
+                                class="hover:text-primary inline-flex w-full items-center border-none p-0 transition focus:bg-transparent text-gray-600 dark:text-slate-500">
+                                <span>Cursos</span>
+                            </button>
+                            <button aria-controls="tabs--panel--2" aria-selected="false" role="tab" tabindex="-1"
+                                class="hover:text-primary inline-flex w-full items-center border-none p-0 transition focus:bg-transparent text-gray-600 dark:text-slate-500">
+                                <span>Podcasts</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- imagen -->
+                    <div class="order-4 col-span-full mt-16 grid lg:col-span-5 lg:col-start-7 lg:mt-0">
+                        <!-- Paneles de pestañas -->
+                        <img class="mb-6 h-80 lg:mb-14" alt="Ilustración de zorro" src="images/zorro.svg" sizes="11rem"
+                            crossorigin="anonymous"
+                            style="aspect-ratio: 0.71 / 1; opacity: 1; transform: none; filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));">
+                        <div style="opacity: 1;">
+                            <h3 class="text-2xl font-medium md:text-3xl text-black dark:text-white">Blog educativo
+                            </h3>
+                            <p class="max-w-full text-lg text-secondary mt-8 prose prose-light dark:prose-dark">
+                                En mi <strong>Blog</strong> podras encontar publicaciones sobre <a
+                                    href="/blog?q=javascript">JavaScript</a>, <a
+                                    href="/blog?q=typescript">TypeScript</a>, <a href="/blog?q=react">React</a>, <a
+                                    href="/blog?q=testing">Testing</a>, <a href="/blog?q=career">tu carrera</a>, <a
+                                    href="/blog">y más</a>.
+                            </p>
+                            <p class="max-w-full text-lg text-secondary mt-8 prose prose-light dark:prose-dark">
+                                Soy desarrollador con conocimiento en HTML, CSS, JavaScript, PHP, Laravel, Flutter,
+                                API RESTful, Apache Cordova, Tailwind CSS, Bootstrap, Npm, Node.js, MySQL,
+                                PostgreSQL, Firebase, MongoDB, WordPress, Drupal, Visual Basic.
+                            </p>
+                            <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none mt-14"
+                                href="/blog">
+                                <span class="mr-8 text-xl font-medium">Comienza a leer el blog</span>
+                                <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                    <div class="absolute text-gray-200 dark:text-gray-600">
+                                        <svg width="60" height="60">
+                                            <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28"
+                                                cx="30" cy="30"></circle>
+                                            <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                                fill="transparent" r="28" cx="30" cy="30"
+                                                style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                                stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                    <span style="transform: none;">
+                                        <svg class="transform -rotate-90" width="32" height="32" viewBox="0 0 32 32"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div aria-labelledby="tabs--tab--1" role="tabpanel" tabindex="-1"
+                        class="col-start-1 row-start-1 block" hidden="">
+                        <!-- Contenido del panel de cursos -->
+                    </div>
+                    <div aria-labelledby="tabs--tab--2" role="tabpanel" tabindex="-1"
+                        class="col-start-1 row-start-1 block" hidden="">
+                        <!-- Contenido del panel de podcasts -->
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="h-40 lg:h-48"></div>
+            <div class="relative mx-10vw">
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <div
+                        class="col-span-full flex flex-col space-y-10 lg:flex-row lg:items-end lg:justify-between lg:space-y-0">
+                        <div class="space-y-2 lg:space-y-0">
+                            <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">Recomendaciones
+                                del blog</h2>
+                            <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500">Preparado
+                                especialmente para ti.</p>
+                        </div>
+                        <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none"
+                            href="/blog">
+                            <span class="mr-8 text-xl font-medium">Ver el blog completo</span>
+                            <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div class="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                            cy="30"></circle>
+                                        <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                            fill="transparent" r="28" cx="30" cy="30"
+                                            style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                            stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;">
+                                    <svg class="transform -rotate-90" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-10 lg:h-12"></div>
+            <div class="relative mx-10vw">
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl gap-y-16">
+                    <!-- Primera recomendación del blog -->
+                    <div class="col-span-4">
+                        <div class="relative w-full">
+                            <a class="group peer relative block w-full focus:outline-none"
+                                href="/blog/common-testing-mistakes">
+                                <div class="relative aspect-[3/4] rounded-lg overflow-hidden">
+                                    <img src="images/error.svg"
+                                        class="absolute h-full w-full object-cover object-center transition"
+                                        alt="Common Testing Mistakes">
+                                </div>
+                                <div class="mt-8 text-xl font-medium text-gray-500">1 de noviembre de 2024 — 10 min de
+                                    lectura</div>
+                                <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Errores
+                                    comunes en las pruebas</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Segunda recomendación del blog -->
+                    <div class="col-span-4">
+                        <div class="relative w-full">
+                            <a class="group peer relative block w-full focus:outline-none"
+                                href="/blog/how-to-use-react-context-effectively">
+                                <div class="relative aspect-[3/4] rounded-lg overflow-hidden">
+                                    <img src="images/react.svg"
+                                        class="absolute h-full w-full object-cover object-center transition"
+                                        alt="How to use React Context effectively">
+                                </div>
+                                <div class="mt-8 text-xl font-medium text-gray-500">1 de junio de 2024 — 10 min de
+                                    lectura</div>
+                                <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Cómo usar
+                                    React de manera efectiva</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tercera recomendación del blog -->
+                    <div class="col-span-4 hidden lg:block">
+                        <div class="relative w-full">
+                            <a class="group peer relative block w-full focus:outline-none"
+                                href="/blog/answers-to-common-questions-about-render-props">
+                                <div class="relative aspect-[3/4] rounded-lg overflow-hidden">
+                                    <img src="images/tailwind.svg"
+                                        class="absolute h-full w-full object-cover object-center transition"
+                                        alt="Answers to common questions about render props">
+                                </div>
+                                <div class="mt-8 text-xl font-medium text-gray-500">1 de Noviembre de 2024 — 10 min de
+                                    lectura</div>
+                                <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Tailwind
+                                    en 10min</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-56 lg:h-64"></div>
+            <div class="relative mx-10vw">
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <div
+                        class="col-span-full flex flex-col space-y-10 lg:flex-row lg:items-end lg:justify-between lg:space-y-0 mb-16">
+                        <div class="space-y-2 lg:space-y-0">
+                            <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">¿Estás listo para
+                                mejorar?</h2>
+                            <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500">Revisa
+                                algunos de mis cursos</p>
+                        </div>
+                        <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none"
+                            href="/courses">
+                            <span class="mr-8 text-xl font-medium">Ver todos los cursos</span>
+                            <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div class="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                            cy="30"></circle>
+                                        <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                            fill="transparent" r="28" cx="30" cy="30"
+                                            style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                            stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;">
+                                    <svg class="transform -rotate-90" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative mx-10vw">
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <div class="col-span-full">
+                        <div class="relative h-full w-full pt-12">
+                            <div
+                                class="relative block h-full w-full rounded-lg bg-gray-100 px-8 pb-10 pt-36 dark:bg-gray-800 md:px-16 md:pb-20">
+                                <h3 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">Epic Web</h3>
+                                <div class="mt-4 max-w-[75%]">
+                                    <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500">
+                                        Conviértete en un desarrollador web full stack.
+                                    </p>
+                                </div>
+                                <div class="mt-16">
+                                    <a class="group relative inline-flex text-lg font-medium opacity-100 transition focus:outline-none disabled:opacity-50"
+                                        tabindex="0" href="https://www.epicweb.dev">
+                                        <div
+                                            class="focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50 bg-inverse">
+                                        </div>
+                                        <div
+                                            class="relative flex h-full w-full items-center justify-center whitespace-nowrap text-inverse space-x-5 px-11 py-6">
+                                            <span>Visitar curso</span>
+                                            <span style="transform: none;">
+                                                <svg class="transform -rotate-135" width="24" height="24"
+                                                    viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="absolute left-16 top-0">
+                                <img loading="lazy" class="h-32 object-contain" alt="El logo de EpicWeb.dev"
+                                    src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/pages/courses/epic-web-light"
+                                    srcset="https://res.cloudinary.com/kentcdodds-com/image/upload/w_128,q_auto,f_auto/kentcdodds.com/pages/courses/epic-web-light 128w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/pages/courses/epic-web-light 256w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_384,q_auto,f_auto/kentcdodds.com/pages/courses/epic-web-light 384w"
+                                    sizes="8rem" crossorigin="anonymous" style="aspect-ratio: 1 / 1;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-full lg:col-span-6">
+                        <div class="relative h-full w-full pt-12">
+                            <div
+                                class="relative block h-full w-full rounded-lg bg-gray-100 px-8 pb-10 pt-36 dark:bg-gray-800 md:px-16 md:pb-20">
+                                <h3 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">Epic React
+                                </h3>
+                                <div class="mt-4 max-w-[75%]">
+                                    <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500">
+                                        La guía más completa para profesionales.
+                                    </p>
+                                </div>
+                                <div class="mt-16">
+                                    <a class="group relative inline-flex text-lg font-medium opacity-100 transition focus:outline-none disabled:opacity-50"
+                                        tabindex="0" href="https://epicreact.dev">
+                                        <div
+                                            class="focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50 bg-inverse">
+                                        </div>
+                                        <div
+                                            class="relative flex h-full w-full items-center justify-center whitespace-nowrap text-inverse space-x-5 px-11 py-6">
+                                            <span>Visitar curso</span>
+                                            <span style="transform: none;">
+                                                <svg class="transform -rotate-135" width="24" height="24"
+                                                    viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="absolute left-16 top-0">
+                                <img loading="lazy" class="h-32 object-contain" alt="Ilustración de un cohete"
+                                    src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/pages/courses/rocket"
+                                    srcset="https://res.cloudinary.com/kentcdodds-com/image/upload/w_128,q_auto,f_auto/kentcdodds.com/pages/courses/rocket 128w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/pages/courses/rocket 256w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_384,q_auto,f_auto/kentcdodds.com/pages/courses/rocket 384w"
+                                    sizes="8rem" crossorigin="anonymous" style="aspect-ratio: 1 / 1;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-full mt-12 lg:col-span-6 lg:mt-0">
+                        <div class="relative h-full w-full pt-12">
+                            <div
+                                class="relative block h-full w-full rounded-lg bg-gray-100 px-8 pb-10 pt-36 dark:bg-gray-800 md:px-16 md:pb-20">
+                                <h3 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">Testing
+                                    JavaScript</h3>
+                                <div class="mt-4 max-w-[75%]">
+                                    <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500">
+                                        Aprende métodos de prueba inteligentes y eficientes.
+                                    </p>
+                                </div>
+                                <div class="mt-16">
+                                    <a class="group relative inline-flex text-lg font-medium opacity-100 transition focus:outline-none disabled:opacity-50"
+                                        tabindex="0" href="https://testingjavascript.com">
+                                        <div
+                                            class="focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50 bg-inverse">
+                                        </div>
+                                        <div
+                                            class="relative flex h-full w-full items-center justify-center whitespace-nowrap text-inverse space-x-5 px-11 py-6">
+                                            <span>Visitar curso</span>
+                                            <span style="transform: none;">
+                                                <svg class="transform -rotate-135" width="24" height="24"
+                                                    viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="absolute left-16 top-0">
+                                <img loading="lazy" class="h-32 object-contain" alt="Ilustración de un trofeo"
+                                    src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/pages/courses/testing-trophy"
+                                    srcset="https://res.cloudinary.com/kentcdodds-com/image/upload/w_128,q_auto,f_auto/kentcdodds.com/pages/courses/testing-trophy 128w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/pages/courses/testing-trophy 256w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_384,q_auto,f_auto/kentcdodds.com/pages/courses/testing-trophy 384w"
+                                    sizes="8rem" crossorigin="anonymous" style="aspect-ratio: 1 / 1;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Espaciador -->
+            <div class="h-56 lg:h-64"></div>
+
+            <!-- Contenedor principal -->
+            <div class="relative mx-10vw">
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <!-- Sección de texto y enlace -->
+                    <div class="col-span-full mt-12 flex flex-col justify-center lg:col-span-5 lg:mt-0">
+                        <div class="text-black dark:text-white">
+                            <svg height="48" viewBox="0 0 292 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)"></g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="292" height="56.4706" fill="white"
+                                            transform="translate(0 11.7646)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white mt-12">Conoce a
+                            personas con ideas afines que enfrentan desafíos similares.</h2>
+                        <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500 mt-8">Únete al
+                            Discord y mejora en la construcción de software juntos.</p>
+                        <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none mt-20"
+                            href="/discord">
+                            <span class="mr-8 text-xl font-medium">Aprende más sobre la comunidad de Epic Web en
+                                Discord</span>
+                            <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div class="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                            cy="30"></circle>
+                                        <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                            fill="transparent" r="28" cx="30" cy="30"
+                                            style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                            stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;">
+                                    <svg class="transform -rotate-90" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Sección de imagen y texto adicional -->
+                    <div class="relative hidden lg:col-span-6 lg:col-start-7 lg:block">
+                        <div class="h-full w-full">
+                            <img class="h-full w-full rounded-lg object-cover"
+                                alt="Kent sentado con su laptop en un banco junto a Kody el Koala"
+                                src="images/perfil1.jpg"
+                                srcset="images/perfil1.jpg 1w, images/perfil1.jpg 650w, images/perfil1.jpg 1300w, images/perfil1.jpg 2600w"
+                                sizes="(max-width: 1023px) 0px, (min-width:1024px) and (max-width:1620px) 40vw, 630px"
+                                crossorigin="anonymous" style="aspect-ratio: 3 / 4;">
+                        </div>
+                        <div class="absolute -left-12 -top-6 flex flex-col space-y-1" style="color: rgb(0, 110, 206);">
+                            <div class="self-start rounded-full bg-blue-100 px-12 py-6 text-lg">¿Quieres aprender React
+                                juntos?</div>
+                            <div class="self-start rounded-full bg-blue-100 px-12 py-6 text-lg">Déjame saber ✌️</div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-12 flex flex-col space-y-1 text-right"
+                            style="color: rgb(0, 131, 0);">
+                            <div class="self-end rounded-full bg-green-100 px-12 py-6 text-lg">¡Claro! ¡Hagámoslo!</div>
+                            <div class="self-end rounded-full bg-green-100 px-12 py-6 text-lg">Déjame mostrarte en lo
+                                que estoy trabajando...🧑‍💻</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaciador -->
+            <div class="h-56 lg:h-64"></div>
+
+            <!-- Contenedor principal -->
+            <div class="relative mx-10vw">
+                <div
+                    class="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+                    <!-- Sección de imagen -->
+                    <div class="col-span-full table lg:col-span-6">
+                        <div class="table-cell text-center align-middle">
+                            <div>
+                                <img loading="lazy" class="rounded-lg object-cover w-full h-full"
+                                    alt="Kent con ropa de nieve, esquís y una tabla de snowboard"
+                                    src="images/perfil2.jpg"
+                                    srcset="images/perfil2.jpg 300w, images/perfil2.jpg 650w, images/perfil2.jpg 1300w, images/perfil2.jpg 1800w, images/perfil2.jpg 2600w"
+                                    sizes="(max-width: 1023px) 80vw, (min-width:1024px) and (max-width:1620px) 40vw, 630px"
+                                    crossorigin="anonymous" style="aspect-ratio: 3 / 4;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección de texto y enlace -->
+                    <div class="col-span-full flex flex-col justify-center lg:col-span-4 lg:col-start-8 lg:mt-0">
+                        <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white mt-12">Soy programador,
+                            desarrollador, músico y creativo.</h2>
+                        <p class="leading-tight text-3xl md:text-4xl text-gray-600 dark:text-slate-500 mt-2">Me apasiona
+                            la tecnología y el arte.</p>
+                        <p class="max-w-full text-lg text-secondary mt-8 prose prose-light dark:prose-dark">
+                            Soy programador front-end y estoy activo en la comunidad de código abierto. También soy
+                            esposo, padre y disfruto creando música y explorando nuevas formas de expresión artística.
+                        </p>
+                        <a class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none mt-14"
+                            href="/about">
+                            <span class="mr-8 text-xl font-medium">Aprende más sobre mí</span>
+                            <div class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div class="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                            cy="30"></circle>
+                                        <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                            fill="transparent" r="28" cx="30" cy="30"
+                                            style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                            stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;">
+                                    <svg class="transform -rotate-90" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Espaciador -->
+            <div class="h-56 lg:h-64"></div>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="border-t border-gray-200 pb-16 pt-48 dark:border-gray-600">
+        <!-- contenedor principal -->
+        <div class="relative mx-10vw">
+            <div
+                class="relative mx-auto grid max-w-7xl grid-cols-4 grid-rows-max-content gap-x-4 md:grid-cols-8 xl:grid-cols-12 xl:gap-x-6">
+                <!-- Sección de información de Kent C. Dodds -->
+                <div class="col-span-full md:col-span-3 xl:row-span-2">
+                    <div>
+                        <!-- Nombre -->
+                        <div class="text-xl font-medium md:text-2xl text-black dark:text-white">Robinson Aristizabal
+                        </div>
+                        <!-- Descripción -->
+                        <p class="text-secondary mt-6 max-w-md text-2xl">Desarrollador a tiempo completo mejorando
+                            nuestro mundo</p>
+                        <!-- Enlaces a redes sociales -->
+                        <div
+                            class="text-secondary mt-6 flex items-center justify-between gap-4 xl:flex-col xl:items-start">
+                            <div class="flex gap-4">
+                                <!-- GitHub -->
+                                <a href="https://github.com/kentcdodds"
+                                    class="text-primary hover:text-team-current focus:text-team-current focus:outline-none">
+                                    <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                        <title>GitHub</title>
+                                        <path fill="currentColor"
+                                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- YouTube -->
+                                <a href="https://youtube.com/c/KentCDodds-vids/videos"
+                                    class="text-primary hover:text-team-current focus:text-team-current focus:outline-none">
+                                    <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                        <title>YouTube</title>
+                                        <path fill="currentColor"
+                                            d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- Twitter -->
+                                <a href="https://twitter.com/kentcdodds"
+                                    class="text-primary hover:text-team-current focus:text-team-current focus:outline-none">
+                                    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>𝕏</title>
+                                        <path
+                                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- RSS -->
+                                <a href="https://kentcdodds.com/blog/rss.xml"
+                                    class="text-primary hover:text-team-current focus:text-team-current focus:outline-none">
+                                    <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                        <title>RSS</title>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.33465 15.52C6.23018 15.52 5.33459 16.4153 5.33459 17.5199C5.33459 18.6244 6.23018 19.5201 7.33465 19.5201C8.43912 19.5201 9.33471 18.6244 9.33471 17.5199C9.33471 16.4153 8.43912 15.52 7.33465 15.52Z"
+                                            fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.33472 10.52V13.0919C8.87972 13.0919 11.7639 15.9753 11.7639 19.5202H14.3347C14.3347 14.5577 10.2973 10.52 5.33472 10.52Z"
+                                            fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.33472 5.52002V8.18702C11.5846 8.18702 16.6688 13.2701 16.6688 19.52H19.3347C19.3347 11.8001 13.0546 5.52002 5.33472 5.52002Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- Elemento decorativo -->
+                            <div class="text-secondary relative flex w-24 items-center xl:mt-20 xl:w-32">
+                                <svg width="208" height="110" viewBox="0 0 208 110" class="absolute block w-full"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg"></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sección de enlaces -->
+                <div class="col-span-full mt-20 md:col-span-5 md:col-start-1 xl:hidden">
+                    <div>
+                        <!-- Título -->
+                        <div class="text-lg font-medium text-black dark:text-white">Mantente al día</div>
+                        <div class="mt-4 max-w-md">
+                            <!-- Descripción -->
+                            <p class="max-w-full text-lg text-secondary">
+                                Suscríbete al boletín para mantenerte al día con artículos,
+                                cursos y mucho más!
+                                <a class="text-secondary underlined hover:text-team-current focus:text-team-current"
+                                    href="/subscribe">Aprende más sobre el boletín <svg
+                                        class="inline-block transform -rotate-135" width="32" height="32"
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg></a>
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <!-- Formulario de suscripción -->
+                            <form novalidate="" action="/action/convert-kit" method="post">
+                                <div style="position:absolute;left:-9999px"><label for="website-url-:R1kul:">Tu
+                                        sitio web</label><input type="text" id="website-url-:R1kul:" tabindex="-1"
+                                        autocomplete="nope" name="url"></div><input type="hidden" name="formId"
+                                    value="newsletter"><input type="hidden" name="convertKitTagId"><input type="hidden"
+                                    name="convertKitFormId" value="827139">
+                                <div class="mb-8">
+                                    <div class="mb-4 flex items-baseline justify-between gap-2"><label for=":Rnkul:"
+                                            class="inline-block text-lg text-gray-500 dark:text-slate-500">Nombre
+                                        </label></div><input required="" autocomplete="firstName" id=":Rnkul:"
+                                        class="placeholder-gray-500 dark:disabled:text-slate-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                        name="firstName">
+                                </div>
+                                <div class="mb-8">
+                                    <div class="mb-4 flex items-baseline justify-between gap-2"><label for=":Rrkul:"
+                                            class="inline-block text-lg text-gray-500 dark:text-slate-500">Correo
+                                            electrónico</label>
+                                    </div><input required="" autocomplete="email" id=":Rrkul:"
+                                        class="placeholder-gray-500 dark:disabled:text-slate-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                        name="email">
+                                </div><button type="submit"
+                                    class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none pt-4"><span
+                                        class="mr-8 text-xl font-medium">Suscríbeme</span>
+                                    <div
+                                        class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                        <div class="absolute text-gray-200 dark:text-gray-600"><svg width="60"
+                                                height="60">
+                                                <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28"
+                                                    cx="30" cy="30"></circle>
+                                                <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                                    fill="transparent" r="28" cx="30" cy="30"
+                                                    style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 0px 0px;"
+                                                    stroke-dashoffset="175.92918860102841" transform-origin="0px 0px">
+                                                </circle>
+                                            </svg></div><span style="transform: none;"><svg class="transform -rotate-90"
+                                                width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                    fill="currentColor"></path>
+                                            </svg></span>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección de contacto -->
+                <div class="col-span-2 mt-20 md:col-start-5 md:row-start-1 md:mt-0">
+                    <div>
+                        <!-- Título -->
+                        <div class="text-lg font-medium text-black dark:text-white">Contacto</div>
+                        <ul class="mt-4">
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/contact">Email de Robinson</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/calls">Llamar a Robinson</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/office-hours">Horas de oficina</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección general -->
+                <div
+                    class="col-span-2 mt-20 md:col-start-7 md:row-start-1 md:mt-0 xl:col-start-5 xl:row-start-2 xl:mt-16">
+                    <div>
+                        <!-- Título -->
+                        <div class="text-lg font-medium text-black dark:text-white">General</div>
+                        <ul class="mt-4">
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/transparency">Mi Misión</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/transparency#privacy">Política de privacidad</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/transparency#terms">Términos de uso</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/conduct">Código de conducta</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección de mapa del sitio -->
+                <div
+                    class="col-span-full mt-20 md:col-span-2 md:col-start-7 xl:col-start-5 xl:row-span-2 xl:row-start-1 xl:ml-56 xl:mt-0">
+                    <div>
+                        <!-- Título -->
+                        <div class="text-lg font-medium text-black dark:text-white">Sitios</div>
+                        <ul class="mt-4">
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/">Inicio</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/blog">Blog</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/courses">Cursos</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/discord">Discord</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/chats">Podcast de Chats</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/workshops">Talleres</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/talks">Charlas</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/testimony">Testimonios</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/testimonials">Testimoniales</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/about">Acerca de</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/credits">Créditos</a></li>
+                            <li class="py-1"><a
+                                    class="text-secondary underlined inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current focus:outline-none"
+                                    href="/sitemap.xml">Sitemap.xml</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sección de suscripción al boletín -->
+                <div class="col-span-4 col-start-9 row-span-2 row-start-1 mt-0 hidden xl:block">
+                    <div>
+                        <!-- Título -->
+                        <div class="text-lg font-medium text-black dark:text-white">Mantente al día</div>
+                        <div class="mt-4 max-w-md">
+                            <!-- Descripción -->
+                            <p class="max-w-full text-lg text-secondary">
+                                Suscríbete al boletín para mantenerte al día con artículos,
+                                cursos y mucho más!
+                                <a class="text-secondary underlined hover:text-team-current focus:text-team-current"
+                                    href="/subscribe">Aprende más sobre el boletín <svg
+                                        class="inline-block transform -rotate-135" width="32" height="32"
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                            fill="currentColor"></path>
+                                    </svg></a>
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <!-- Formulario de suscripción -->
+                            <form novalidate="" action="/action/convert-kit" method="post">
+                                <div style="position:absolute;left:-9999px"><label for="website-url-:R1sul:">Tu
+                                        sitio web</label><input type="text" id="website-url-:R1sul:" tabindex="-1"
+                                        autocomplete="nope" name="url"></div><input type="hidden" name="formId"
+                                    value="newsletter"><input type="hidden" name="convertKitTagId"><input type="hidden"
+                                    name="convertKitFormId" value="827139">
+                                <div class="mb-8">
+                                    <div class="mb-4 flex items-baseline justify-between gap-2"><label for=":Rnsul:"
+                                            class="inline-block text-lg text-gray-500 dark:text-slate-500">Nombre</label>
+                                    </div><input required="" autocomplete="firstName" id=":Rnsul:"
+                                        class="placeholder-gray-500 dark:disabled:text-slate-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                        name="firstName">
+                                </div>
+                                <div class="mb-8">
+                                    <div class="mb-4 flex items-baseline justify-between gap-2"><label for=":Rrsul:"
+                                            class="inline-block text-lg text-gray-500 dark:text-slate-500">Correo
+                                            electrónico</label>
+                                    </div><input required="" autocomplete="email" id=":Rrsul:"
+                                        class="placeholder-gray-500 dark:disabled:text-slate-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                        name="email">
+                                </div><button type="submit"
+                                    class="text-primary inline-flex cursor-pointer items-center text-left font-medium transition focus:outline-none pt-4"><span
+                                        class="mr-8 text-xl font-medium">Suscríbete</span>
+                                    <div
+                                        class="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                        <div class="absolute text-gray-200 dark:text-gray-600"><svg width="60"
+                                                height="60">
+                                                <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28"
+                                                    cx="30" cy="30"></circle>
+                                                <circle class="text-primary" stroke="currentColor" stroke-width="2"
+                                                    fill="transparent" r="28" cx="30" cy="30"
+                                                    style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                                    stroke-dashoffset="175.92918860102841" transform-origin="30px 30px">
+                                                </circle>
+                                            </svg></div><span style="transform: none;"><svg class="transform -rotate-90"
+                                                width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                    fill="currentColor"></path>
+                                            </svg></span>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sección de derechos reservados -->
+                <div
+                    class="col-span-full mt-24 text-lg text-gray-500 dark:text-slate-500 md:mt-44 text-center space-y-2 md:space-y-0 md:space-x-4">
+                    <span>Todos los derechos reservados</span>
+                    <span class="block md:inline">Desarrollado por JRAS © 2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/theme-toggle.js"></script>
+</body>
+
+</html>
